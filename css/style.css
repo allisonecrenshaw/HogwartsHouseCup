@@ -1,10 +1,42 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+* {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
 body {
   background-image: url(../Images/GreatHall.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgb(62, 43, 43);
+}
+
+.hogwarts-house-names {
+  list-style: none;
+  padding: 5px;
+}
+.title-scroll-image {
+  /* display: flex;
+  justify-content: center; */
+}
+
+.gryffindor {
+  background-color: maroon;
+}
+.hufflepuff {
+  background-color: goldenrod;
+}
+.slytherin {
+  background-color: green;
+}
+.ravenclaw {
+  background-color: navy;
+}
+
+.house-winner {
   background-color: rgb(62, 43, 43);
 }
 
