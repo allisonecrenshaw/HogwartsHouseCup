@@ -1,0 +1,13 @@
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-image: url(../Images/GreatHall.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(62, 43, 43);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
