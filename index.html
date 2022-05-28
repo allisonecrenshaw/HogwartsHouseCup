@@ -17,14 +17,31 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header>
-      <!-- Title Scroll -->
-      <div class="title-scroll-image">
+      <div class="flag-and-scroll-container">
+        <!-- Flag 1-->
         <img
+          id="flag1"
+          class="header-image"
+          src="./Images/HogwartsFlag.png"
+          alt="Image of winning house flag"
+        />
+        <!-- Title Scroll -->
+        <img
+          id="scroll"
+          class="header-image"
           src="./Images/Scroll.png"
           alt="Scroll unrolling from left to right with text on it saying Hogwarts House Cup Selector."
+        />
+        <!-- Flag 2-->
+        <img
+          id="flag2"
+          class="header-image"
+          src="./Images/HogwartsFlag.png"
+          alt="Image of winning house flag"
         />
       </div>
     </header>
@@ -32,12 +49,16 @@
     <!-- Main -->
     <main>
       <!-- Hogwarts House Names -->
-      <ul class="hogwarts-house-names">
-        <li class="gryffindor">Gryffindor</li>
-        <li class="hufflepuff">Hufflepuff</li>
-        <li class="slytherin">Slytherin</li>
-        <li class="ravenclaw">Ravenclaw</li>
-      </ul>
+      <h1 class="instruction-text">
+        Which Hogwarts house should win this year?
+      </h1>
+      <h2 class="instruction-text">Choose below:</h2>
+      <section>
+        <button class="gryffindor" type="button">Gryffindor</button>
+        <button class="hufflepuff" type="button">Hufflepuff</button>
+        <button class="slytherin" type="button">Slytherin</button>
+        <button class="ravenclaw" type="button">Ravenclaw</button>
+      </section>
     </main>
 
     <!-- JavaScript Main -->

@@ -2,7 +2,7 @@
 /* CLEAR FIX/BOX MODEL HACKS
 /*******************************************/
 * {
-  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .clearfix:after {
@@ -22,17 +22,17 @@
 /* GENERAL STYLES/BACKGROUND
 /*******************************************/
 * {
-  font-family: sans-serif;
+  font-family: serif;
   text-align: center;
   color: white;
+  margin: 0px;
   padding: 0px;
   border: 0px;
+  vertical-align: baseline;
 }
 
 html,
 body {
-  margin: 0 auto;
-  padding: 0;
   width: 100%;
   overflow-x: hidden;
 }
@@ -45,20 +45,57 @@ body {
 }
 
 /******************************************
-/* LAYOUT/PAGE ELEMENTS
+/* Header Styles
 /*******************************************/
-.title-scroll-image {
+header {
+  padding-bottom: 20px;
+}
+
+.flag-and-scroll-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  border: 0px;
-  padding: 0px;
+  justify-content: space-around;
+}
+.header-image {
+  min-width: 0;
+}
+#flag1,
+#flag2 {
+  height: 250px;
+}
+#scroll {
+  height: 200px;
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* Main Section Styles
 /*******************************************/
-.hogwarts-house-names {
-  list-style: none;
+main {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.instruction-text {
+  margin: 0px;
+  padding: 5px;
+}
+
+button {
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(249, 180, 4, 0.65);
+}
+
+button:hover {
+  box-shadow: 0 0 50px rgba(249, 180, 4, 0.99);
 }
 
 .gryffindor {
@@ -71,5 +108,5 @@ body {
   background-color: green;
 }
 .ravenclaw {
-  background-color: navy;
+  background-color: rgb(46, 52, 120);
 }
