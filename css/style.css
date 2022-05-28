@@ -1,10 +1,40 @@
 /******************************************
-/* LAYOUT
+/* CLEAR FIX/BOX MODEL HACKS
+/*******************************************/
+* {
+  -moz-box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* GENERAL STYLES/BACKGROUND
 /*******************************************/
 * {
   font-family: sans-serif;
   text-align: center;
   color: white;
+  padding: 0px;
+  border: 0px;
+}
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,13 +44,21 @@ body {
   background-color: rgb(62, 43, 43);
 }
 
+/******************************************
+/* LAYOUT/PAGE ELEMENTS
+/*******************************************/
+.title-scroll-image {
+  display: flex;
+  justify-content: center;
+  border: 0px;
+  padding: 0px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
 .hogwarts-house-names {
   list-style: none;
-  padding: 5px;
-}
-.title-scroll-image {
-  /* display: flex;
-  justify-content: center; */
 }
 
 .gryffindor {
@@ -35,11 +73,3 @@ body {
 .ravenclaw {
   background-color: navy;
 }
-
-.house-winner {
-  background-color: rgb(62, 43, 43);
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
