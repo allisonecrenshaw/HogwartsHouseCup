@@ -98,15 +98,15 @@ button:hover {
   box-shadow: 0 0 50px rgba(249, 180, 4, 0.99);
 }
 
-.gryffindor {
+#gryffindor-button {
   background-color: maroon;
 }
-.hufflepuff {
+#hufflepuff-button {
   background-color: goldenrod;
 }
-.slytherin {
+#slytherin-button {
   background-color: green;
 }
-.ravenclaw {
+#ravenclaw-button {
   background-color: rgb(46, 52, 120);
 }
