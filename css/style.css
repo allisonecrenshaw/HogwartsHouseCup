@@ -38,9 +38,11 @@ body {
 }
 
 body {
+  height: 100 vh;
   background-image: url(../Images/GreatHall.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   background-color: rgb(62, 43, 43);
 }
 
